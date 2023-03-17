@@ -20,7 +20,8 @@ public class zadanie7_8_1 {
         int authorStart = page.indexOf("Уолтер Уайт мл.");
         int authorEnd = page.indexOf("Уолтер Уайт мл.");
         String author = page.substring(authorStart, authorEnd + 11);
-        System.out.println(author);
+        System.out.println(quote);
+        System.out.println("(" + author + ")");
     }
 
     private static String downloadWebPage(String url) throws IOException {

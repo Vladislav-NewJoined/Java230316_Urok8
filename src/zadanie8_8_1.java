@@ -21,7 +21,14 @@ public class zadanie8_8_1 {
         int authorStart = page.indexOf("Уолтер Уайт мл.");
         int authorEnd = page.indexOf("Уолтер Уайт мл.");
         String author = page.substring(authorStart, authorEnd + 11);
-        System.out.println(author);
+        //System.out.println("(" + author + ")");
+        String text = (!author.equals("Уолтер Уайт")) ? "Restart and try again." : quote + "\n" + author;
+        //if (!author.equals("Уолтер Уайт")) {
+        //text = "Restart and try again.";
+        //} else {
+        //text = quote + "\n" + author;
+        //}
+        System.out.println(text);
     }
 
     private static String downloadWebPage(String url) throws IOException {
